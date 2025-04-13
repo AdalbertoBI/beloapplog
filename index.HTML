@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteirizador de Entregas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roteirizador de Entregas</h1>
+        <div id="location-warning" class="warning"></div>
+        
+        <form id="order-form">
+            <input type="text" id="address" placeholder="Digite o endereço" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        
+        <div id="order-list"></div>
+        <div id="map"></div>
+    </div>
+
+    <div id="loading" class="loading"></div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
